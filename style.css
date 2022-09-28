@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+*{
+    color: #191919;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+body{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+
+}
+.cont2{
+    background-color: whitesmoke;
+}
+.about-mg{
+    margin-top: 0;
+}
+.line {
+    display: flex;
+    flex-direction: row;
+  }
+  .line:before, .line:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid #EF5B0C;
+    margin: auto;
+  }
+  .line:before {
+    margin-right: 10px
+  }
+  .line:after {
+    margin-left: 10px
+  }
+
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+    background-color: #212121;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+}
+.logo{
+    height: 4rem;
+    width: 10rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #F76E11;
+    font-size: 19px;
+}
+.p-name{
+    color: #D9D9D9;
+    font-size: 3rem;
+}
+
+.about-bg,.about-col{
+    background-color: whitesmoke;
+    color: #191919;
+}
+.bg-img{
+    background-image: url("images/Untitled\ design.png");
+    background-size: cover;
+}
+.row{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0;
+}
+.profile{
+    border-radius: 100%;
+    width: 60%;
+}
+.left{
+    text-align: left;
+    margin-left: 5%;
+}
+.btn{
+    padding: 1rem;
+    border-radius: 8px;
+}
+button:hover{
+    transform: scale(1.1);
+}
+.btn-primary{
+    background-color: #F76E11;
+    border: none;
+}
+
+.about-row,.whatido-row,.skills-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.about-col,.whatido-col,.skills-col{
+    padding: 3rem;
+}
+.grey{
+    color: #535353;
+}
+.skill-col{
+    color: #A6A6A6;
+    padding-top: 3%;
+}
+.grey-bg,.skills{
+    background-color: #0D0D0D;
+}
+.green{
+    color: #D9B504;
+    font-size: 25px;
+}
+
+.whatido-col{
+    background-color: #ABA8A8;
+    width: 15%;
+    word-wrap: break-word;
+}
+.whatido{
+    background-color: #ABA8A8;
+    padding-top: 1px;
+}
+.size{
+    width:90%;
+}
+.grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
+input{
+    margin:3% 0;
+    padding: 1rem;
+    width: 70%;
+    border: none;
+    border-bottom: 2px solid #212121;
+    border-right: 2px solid #212121;
+    
+}
+textarea{
+    resize: none;
+    margin-top: 7%;
+    width: 181%;
+    border: none;
+    border-bottom: 2px solid #212121;
+    border-right: 2px solid #282828;
+    height: 50%;
+}
+
+.but{
+    padding-left: 5%;
+    padding-right: 5%;
+    
+    border-color: white;
+    border: 1px solid;
+}
+.icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.ic{
+    margin:3%;
+}
+.rights{
+    margin-top: 3%;
+}
+.footer,.icon,.ic,.rights{
+    background-color: #B8B8B8;
+}
+.footer{
+    margin-top: 3%;
+    padding: 2%;
+}
+@media screen and (max-width: 890px) {
+    .btn{
+        margin-bottom: 5%;
+        
+    }
+
+}
+@media screen and (max-width:810px){
+    .about-row,.whatido-row,.skills-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+    .whatido-row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .whatido-col{
+        width: 60%;
+        margin: 2%;
+    }
+ 
+}
+@media screen and (max-width:470px) {
+    .grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    textarea{
+        width: 70%;
+    }
+    input{
+        width:65%;
+    }
+    .but{
+        margin: 5%;
+    }
+
+    
+}
+@media screen and (max-width:490px) {
+    nav ul li {
+        margin: 2px;
+    }
+}
+@media screen and (max-width:350px) {
+    nav ul li {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:640px) {
+.row{
+    display: flex;
+    flex-direction: column-reverse;
+}.profile{
+    width: 10rem;
+}
+.btn{
+    margin: 4%;
+}
+}
